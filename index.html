@@ -35,17 +35,137 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/12.png" alt="">
+                <img src="images/WhatsApp Image 2022-09-25 at 1.42.41 PM.jpeg">
             </div>
             <div class="about-col-2">
-                 <h1 class="sub-title">ABOUT ME</h1>
-                 <p>tell about your self</p>
+                 <h1 class="sub-title">About Me</h1>
+                 <p><br><br>I'am Shanmukha Srkar Gampa, Searching for an Organization<br>
+                    which enhance my skills of Cyber Security and Ethical Hacking<br> 
+                    and always ready to Learn new things.<br><br>
+                 </p>
+
+                 <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('internships')">Internships</p>
+                    
+                 </div>
+                 <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                            <li>  <br>    </li>
+                            <li> <span>Linux</span></li>
+                            <li> <span>Ethical Hacking</span></li>
+                            <li> <span>C language</span></li>
+                            <li> <span>Python</span></li>
+                            
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="education">
+                    <ul>
+                            <li>  <br>    </li>
+                            <li> <span>pursuing</span><br>BTech from Adikavi Nannaya University RAJAHMUNDRY </li>
+                            <li> <span>2019</span><br>Intermediate from Pratibha Junior College RAJAHMUNDRY</li>
+                            <li> <span>2017</span><br>SSC from B.V.M High School RAJAHMUNDRY</li>
+                            
+                            
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="internships">
+                    <ul>
+                            <li>  <br>    </li>
+                            <li> <span> "CEH in EC-Council"</span><br>AT Hacker's School HYDERABAD </li>
+                            <li> <span> "Network and Infocum Services"</span><br>AT ONGC Rajahmundry</li>
+                            <li> <span>"Automation and Scada"</span><br>AT APSSDC Online </li>
+                    </ul>
+                 </div>
             </div>
         </div>
     </div>
 </div>
 
 
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="services-list">
+            <div>
+                <h2> CEH </h2>
+                <p><br><brCompleted my CEH (EC-Council) course <br>and skills regarding all the<br>high end Tools in LINUX OS <br><br><br></p>
+            </div>
+            <div>
+                <h2> Linux </h2>
+                <p><br><br>I have a Mid Range Advanced Skills<br> of LINUX Operating System<br><br><br><br></p>
+            </div>
+            <div>
+                <h2> Basics of Python and C language </h2>
+                <p><br><br> I have the basic skills of both python and C languages <br><br><br><br></p>
+            </div>
+        </div>   
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Achievements</h1>
+        <div class="work-list">
+        <div class="work">
+            <img src="images/1.jpeg">
+            <div class="layer">
+                
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/2.jpeg">
+        </div>
+        <div class="work">
+            <img src="images/3.jpeg">
+        </div>
+        <div class="work">
+            <img src="images/4.jpeg">
+        </div>
+        <div class="work">
+            <img src="images/5 - Copy.jpeg">
+        </div>
+        <div class="work">
+            <img src="images/6.jpeg">
+        </div>
+    </div>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">CONTACT ME</h1>
+                <p><i class="fa-regular fa-envelope"></i>shanmukhasrikar123@gmail.com</p>
+                <p><i class="fa-regular fa-phone"></i>7288851167</p>
+                
+            </div>
+            <a href="images/Gampa Shanmukha Srikar Resume-converted (1).pdf"class="btn btn2">Download CV</a>
+            <div class="contact-right"></div>
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+   
+</script>
 
 </body>
 </html>
